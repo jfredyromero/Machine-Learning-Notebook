@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Machine Learning Notebook</title>
+  </head>
+  <style>
+    h1{
+      background-color: yellow;
+      text-align: center;
+      padding: 1rem;
+    }
+    ul li{
+      color: red;
+    }
+  </style>
+  <body>
+    <header class="sticky-top" id="title">
+      <h1>Machine Learning Notebook</h1>
+    </header>
+    <main class="container" id="notebook">
+      <pag class="container" id="1">
+        <h2 class="text-center">Major machine learning techniques</h2>
+        <ul>
+          <li>Regression/Estimation:</li>
+            <p>It's used for predicting a continuos value, for example, the price of a house based on its characteristics</p>
+          <li>Clasification:</li>
+            <p>It's used for predicting a class or a category of a case, for example, if a cell is bening or maling</p>
+          <li>Clustering:</li>
+            <p>It's used for clustering groups of similar cases, for example, find similar patients</p>
+          <li>Association:</li>
+            <p>It's used for finding items or events that often co-occur, for example, grocery items that are usually bought together</p>
+          <li>Anomaly Detection:</li>
+            <p>It's used for discovering abnormal and unsual cases. for example, credit card fraud detection</p>
+          <li>Sequence Mining:</li>
+            <p>It's used for predicting next events, for example, the click stream in web sites</p>
+          <li>Dimension Reduction:</li>
+            <p>It's used for reducing the size of data</p>
+          <li>Recommendation Systems:</li>
+            <p>It's used for associate different tastes or preferences of persons and then recommend new items they might like</p>
+        </ul>
+      </pag>
+      <pag class="container" id="2">
+        <h2 class="text-center">Supervised vs Unsupervised learning</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4 class="text-center">Supervised learning</h4>
+            <p>We observe and direct the execution of a task, project or activity. We'll be supervising a machine learnign model by teaching it
+            by loading it with necessary knowledge, so we can have a predict on the future. We train the model with some data from a labeled dataset.
+            It's important to note that the dataset is labeled and the enviroment is very controlled by us. There are two kinds of supervising models: CLASSIFICATION AND REGRESSION</p>
+          </div>
+          <div class="col-lg-6">
+            <h4 class="text-center">Unsupervised learning</h4>
+            <p>We don't supervise the model, but we let the model work on his own to discover information that is not visible for the human eye.
+            Since we know little information about the data or the outcomes that are to be expected, it has more difficult algorithms.
+            It's important to note that here we deal with unlabeled dataset of information and our task is to classify or to cluster it. By the way,
+            the enviroment we work on is very less controlled. The most widely used techniques are: DIMENSION REDUCTION, DENSITY ESTIMATION,
+            MARKET BASKET ANALYSIS AND CLUSTERING</p>
+          </div>
+        </div>
+      </pag>
+      <pag class="container" id="3">
+        <h2 class="text-center">Regression</h2>
+        <p>It has two kind of variables: Dependent and independent variable. The dependent variable is the goal we try to predict, and the independent variable (can be one or more)
+        is the cause of the dependent variable. Basiclly there are two types of regression models:</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4 class="text-center">Simple Regression</h4>
+            <p>It's when ONE independent variable is used to estimate one dependent variable. It can be:</p>
+            <ul>
+              <li>Simple Linear Regression</li>
+                <iframe src="https://www.youtube.com/embed/rgeVrrMcP5g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <li>Simple Non-Linear Regression</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h4 class="text-center">Multiple Regression</h4>
+            <p>It's when ONE OR MORE independents variables are used to estimate one dependent variable. It can be:</p>
+            <ul>
+              <li>Multiple Linear Regression</li>
+              <li>Multiple Non-Linear Regression</li>
+            </ul>
+          </div>
+        </div>
+      </pag>
+      <pag class="container" id="4">
+        <h2 class="text-center">Model Evaluation in Regression Models</h2>
+        <p>The most widely used evaluation models are: </p>
+        <ul>
+          <li>Train and Test on the same data set</li>
+            <p>Due to test with training data, it produces a high training accuracy but this is not necessarily a good thing. It may be over-fit and a non-generalized model
+            By the way this produces a low out-of-sample accuracy</p>
+          <li>Train and Test Split</li>
+            <p>Due to test with non-training data, it produces a higher out-of-sample accuracy wich is what we want.
+            The problem with this model is a high dependency on wich datasets the data is trained and tested.</p>
+          <li>K-fold Cross-validation</li>
+            <p>It performs multiple Train and Test split evaluations and average the results. Then the total result is a more consistent out-of-sample accuracy</p>
+        </ul>
+        <iframe src="https://www.youtube.com/embed/qf-jf3k4R9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </pag>
+      <pag class="container" id="4">
+        <h2 class="text-center">Evaluation Metrics in Regression Models</h2>
+        <p>In the regression model, an error consists on the meassure of how far the data points are from the trend line generated by the algorithm.</p>
+        <p>The most widely used evaluation metrics are:</p>
+        <ul>
+          <li>Mean Absolute Error</li>
+          <li>Mean Squared Error</li>
+          <li>Root Mean Squared Error</li>
+          <li>Relative Absolute Error</li>
+          <li>Relative Squared Error</li>
+          <li>R^2 = 1 - RSE</li>
+            <p>This is not an error but is a popular metric for the accuracy of the model. The higher R-squared, the higher the model fits the data</p>
+        </ul>
+      </pag>
+    </main>
+  </body>
+</html>
